@@ -13,8 +13,6 @@ public class BucketSort extends Sortable {
 
 		sortable.sort(input);
 
-//		System.out.println("\nAfter Sort : ");
-//		SortUtil.display(input);
 	}
 
 	@Override
@@ -24,8 +22,6 @@ public class BucketSort extends Sortable {
 		int maxValue = SortUtil.maxValue(inputArray);
 
 		int [] outputArray = bucketSort(maxValue);
-		System.out.println("\n");
-		SortUtil.display(outputArray);
 
 	}
 

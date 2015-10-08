@@ -13,9 +13,10 @@ public enum SortingAlgorithm {
     INSERTION_SORT_ALGORITHM(SortingAlgorithmName.INSERTION_SORT, new InsertionSort()),
     MERGE_SORT_ALGORITHM(SortingAlgorithmName.MERGE_SORT, new MergeSort()),
     QUICK_SORT_ALGORITHM(SortingAlgorithmName.QUICK_SORT, new QuickSort()),
-    SELECTION_SORT_ALGORITHM(SortingAlgorithmName.SELECTION_SORT, new SelectionSort());
-
-    private final SortingAlgorithmName name;
+    SELECTION_SORT_ALGORITHM(SortingAlgorithmName.SELECTION_SORT, new SelectionSort()),
+	SHELL_SORT_ALGORITHM(SortingAlgorithmName.SHELL_SORT, new ShellSort());
+    
+	private final SortingAlgorithmName name;
     private final Sortable algorithm;
 
     SortingAlgorithm(final SortingAlgorithmName name, final Sortable algorithm) {
@@ -53,7 +54,11 @@ public enum SortingAlgorithm {
             case SELECTION_SORT:
                 algorithm = SortingAlgorithm.SELECTION_SORT_ALGORITHM;
                 break;
-            	
+        
+            case SHELL_SORT:
+            	algorithm = SortingAlgorithm.SHELL_SORT_ALGORITHM;
+                break;
+        
             default:
                 System.err.println("No Such Algorithm Defined");
         }

@@ -11,5 +11,5 @@ public enum SortingAlgorithmName {
     , MERGE_SORT
     , QUICK_SORT
     , SELECTION_SORT
-    // , SHELL_SORT
+    , SHELL_SORT
 }
